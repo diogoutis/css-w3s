@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS style images 10</title>
+    <style>
+        .container {
+            position: relative;
+        }
+
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Text</h1>
+
+    <p>Add some text to an image in the top right corner:</p>
+
+    <div class="container">
+        <img src="images/img_5terre_wide.jpg" alt="Cinque Torre" width="1000" height="300">
+        <div class="topright">Top Right</div>
+    </div>
+</body>
+</html>
