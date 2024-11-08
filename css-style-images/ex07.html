@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS style images 07</title>
+    <style>
+        body {margin: 25px;}
+
+        div.polaroid {
+            width: 80%;
+            background-color: white;
+            box-shadow: 
+                0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19)
+            ;
+            margin-bottom: 25px;
+        }
+
+        div.container {
+            text-align: center;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Polaroid Images / Cards</h1>
+
+    <div class="polaroid">
+        <img src="images/img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
+        <div class="container">
+            <p>Cinque Terre</p>
+        </div>
+    </div>
+
+    <div class="polaroid">
+        <img src="images/img_lights.jpg" alt="Norther Lights" style="width: 100%;">
+        <div class="container">
+            <p>Norther Lights</p>
+        </div>
+    </div>
+</body>
+</html>
