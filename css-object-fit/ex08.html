@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object-fit 08</title>
+    <style>
+        .fill {object-fit: fill;}
+        .contain {object-fit: contain;}
+        .cover {object-fit: cover;}
+        .scale-down {object-fit: scale-down;}
+        .none {object-fit: none;}
+    </style>
+</head>
+<body>
+    <h1>The object-fit Property</h1>
+
+    <h2>No object-fit:</h2>
+    <img src="images/paris.jpg" alt="Paris" style="width: 200px; height: 300px;">
+
+    <h2>object-fit: fill (this is default):</h2>
+    <img class="fill" src="images/paris.jpg" alt="Paris" style="width: 200px; height: 300px;">
+
+    <h2>object-fit: contain:</h2>
+    <img src="images/paris.jpg" alt="Paris" class="contain" style="width: 200px; height: 300px;">
+
+    <h2>object-fit: cover:</h2>
+    <img src="images/paris.jpg" alt="Paris" class="cover" style="width: 200px; height: 300px;">
+
+    <h2>object-fit: scale-down:</h2>
+    <img src="images/paris.jpg" alt="Paris" class="scale-down" style="width: 200px; height: 300px;">
+
+    <h2>object-fit: none:</h2>
+    <img src="images/paris.jpg" alt="Paris" class="none" style="width: 200px; height: 300px;">
+</body>
+</html>
