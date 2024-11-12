@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS masking 0</title>
+</head>
+<body>
+    <h1>The mask-image Property</h1>
+
+    <h2>An SVG mask layer (formed as a triangle):</h2>
+
+    <svg width="600" height="400">
+        <mask id="svgmask1">
+            <polygon fill="#ffffff" points="200 0, 400 400, 0 400"></polygon>
+        </mask>
+        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/img_5terre.jpg" mask="url(#svgmask1)"></image>
+    </svg>
+
+    <h2>Original image:</h2>
+    <img src="images/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</body>
+</html>
