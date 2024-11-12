@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS masking 04</title>
+    <style>
+        .mask1 {
+            max-width: 600px;
+            height: 350px;
+            overflow-y: scroll;
+            background: url('images/img_5terre.jpg') no-repeat;
+            -webkit-mask-image: linear-gradient(black, transparent);
+            mask-image: linear-gradient(black, transparent);
+        }
+
+        p {
+            font-size: 20px;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>The mask-image Property</h1>
+
+    <h2>A linear gradient as a mask layer:</h2>
+
+    <div class="mask1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam totam quisquam eum laudantium porro praesentium repellat officiis id voluptate doloribus. Nam, possimus. Quasi consequuntur porro quibusdam fuga possimus tempora excepturi?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ex placeat, fugit culpa in, minus adipisci ut, illum id esse qui voluptatum corporis consequatur praesentium? Recusandae quaerat repellat nobis commodi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime itaque maiores officia est dolores, libero minus at quaerat id? Quidem sed praesentium quas voluptatem nisi perferendis nostrum nobis velit aliquid.</p>
+    </div>
+</body>
+</html>
