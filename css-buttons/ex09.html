@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS buttons 09</title>
+    <style>
+        .button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Disable Button</h1>
+
+    <p>Use the opacity property to add some transparency to a button (make it look disable):</p>
+
+    <button class="button">Normal Button</button>
+    <button class="button disabled">Disable Button</button>
+</body>
+</html>
