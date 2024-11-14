@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS buttons 12</title>
+    <style>
+        .btn-group button {
+            background-color: #04AA6D;
+            border: 1px solid green;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .btn-group .button:not(:last-child) {
+            border-right: none
+        }
+
+        .btn-group .button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordered Button Group</h1>
+
+    <p>Add borders to create a bordered button group:</p>
+
+    <div class="btn-group">
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+    </div>
+
+    <p><br> Remember to clear after, or else will this p element also float next to the buttons.</p>
+</body>
+</html>
