@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables 06</title>
+    <style>
+        :root {
+            --blue: #1e90ff;
+            --white: #fff;
+        }
+
+        body {background-color: var(--blue);}
+
+        h2 {border-bottom: 2px solid var(--blue);}
+
+        .container {
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+        }
+
+        .container button {
+            background-color: var(--white);
+            color: var(--blue);
+            border: 1px solid var(--blue);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get an Change CSS Variables with JavaScript</h1>
+
+    <div class="container">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, dolorum quod. Repellat ipsum laudantium omnis assumenda dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laudantium voluptatem, sequi sapiente nostrum quisquam nesciunt quae!</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+    </div>
+    <br>
+
+    <button type="button" onclick="myFunction_get()">Get CSS Variable with JavaScript</button>
+    <button type="button" onclick="myFunction_set()">Change CSS Variable with JavaScript</button>
+
+    <script>
+        var r = document.querySelector(':root');
+
+        function myFunction_get() {
+            var rs = getComputedStyle(r);
+            alert(`The value of -- blue is: ` + rs.getPropertyValue('--blue'));
+        }
+
+        function myFunction_set() {
+            r.style.setProperty('--blue', 'lightblue');
+        }
+    </script>
+</body>
+</html>
