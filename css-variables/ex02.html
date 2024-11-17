@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables 02</title>
+    <style>
+        :root {
+            --blue: #1e90ff;
+            --white: #fff;
+        }
+
+        body {background-color: var(--blue);}
+
+        h2 {border-bottom: 2px solid var(--blue);}
+
+        .container {
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+        }
+
+        button {
+            background-color: var(--white);
+            color: var(--blue);
+            border: 1px solid var(--blue);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using the var() Function</h1>
+
+    <div class="container">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, asperiores. Reiciendis quidem, repellat ex corporis magni cumque? Suscipit, dicta? Ullam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum error nesciunt, repellat eius suscipit sapiente sequi amet voluptatibus minima eos!</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+    </div>
+</body>
+</html>
