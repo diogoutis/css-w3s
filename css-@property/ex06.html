@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS @property 06</title>
+    <style>
+        @property --startColor {
+            syntax: '<color>';
+            inherits: false;
+            initial-value: #EADEDB;
+            
+        }
+
+        @property --endColor {
+            syntax: '<color>';  
+            initial-value: #BC70A4;
+            inherits: false;
+        }
+
+        .ex1 {
+            background: linear-gradient(var(--startColor), var(--endColor));
+            animation: gradient 3s linear infinite;
+        }
+
+        @keyframes gradient {
+            0%,
+            100% {
+                --starColor: #EADEDB;
+                --endColor: #BC70A4;
+            }
+            50% {
+                --star-Color: #BC70A4;
+                --endColor: #BFD641;
+            }
+        }
+
+        #grad1 {height: 200px;}
+    </style>
+</head>
+<body>
+    <h1>The @property Rule</h1>
+
+    <p>The @property rule is here used to animate a gradient:</p>
+
+    <div id="grad1" class="ex1"></div>
+</body>
+</html>
