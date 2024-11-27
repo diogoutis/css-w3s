@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS mq examples 06</title>
+    <style>
+        div.example {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        @media screen and (min-width: 600px) {
+            div.example {
+                font-size: 80px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            div.example {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Change the tont size of an element on different screen sizes</h1>
+
+    <div class="example">Example DIV.</div>
+
+    <p>When the browser's width is 600px wide or less, set the font-size of DIV to 30px. When it is 601px or wider, set the font-size to 80px. Resize the browser window to see the effect.</p>
+</body>
+</html>
